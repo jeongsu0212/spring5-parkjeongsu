@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StoredProcedureOraclev10g" name="PROC_BOARD_INSERT" directorySegmentName="seg_0" id="B9DB84DB-47B1-68B3-3BB0-C09443FB3E92">
+<sourceConnName>XE</sourceConnName>
+<sourceObjSchema>XE</sourceObjSchema>
+<sourceObjName>PROC_BOARD_INSERT</sourceObjName>
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+<owner><![CDATA[E7E5D8F7-B4FC-37C1-7FCE-4B163CC9136D]]></owner>
+<source>CREATE OR REPLACE PROCEDURE      XE.PROC_BOARD_INSERT 
+(
+  P_BOARD_TYPE IN VARCHAR2 
+, P_COUNT IN NUMBER 
+) AS 
+BEGIN
+  -- 실행방법;쿼리에디터에서 CALL PROC_BOARD_INSERT(&apos;notice&apos;,50);
+  FOR i IN 1..P_COUNT LOOP
+        INSERT INTO TBL_BOARD
+        (bno,board_type,title,content,writer,reg_date,update_date) 
+        VALUES
+        (SEQ_BNO.nextval,P_BOARD_TYPE,&apos;게시물테스트&apos;,&apos;게시물내용테스트&apos;,&apos;관리자&apos;,SYSDATE,SYSDATE);
+      END LOOP;
+commit;
+END PROC_BOARD_INSERT;</source>
+</StoredProcedureOraclev10g>

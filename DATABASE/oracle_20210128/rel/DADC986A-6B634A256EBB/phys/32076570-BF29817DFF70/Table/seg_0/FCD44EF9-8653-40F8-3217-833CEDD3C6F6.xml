@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TBL_MEMBER" directorySegmentName="seg_0" id="FCD44EF9-8653-40F8-3217-833CEDD3C6F6">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+<schemaObject>ADB3876C-1263-6B1C-46E5-2E4AAC99AF36</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>29607101-8875-B514-B07F-4390B27CCFD0</segment>
+<tableSpace>BC21371C-4DBA-179D-BABB-C45BD34BA8F8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="USER_ID" id="1F5FBF2A-4F02-6832-2D56-9B2B3FDEC384">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_NAME" id="2D258F0A-E8FA-FBD7-8F4E-98D5A2176800">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="58BA8674-9700-A07B-437B-5D41F52E18AB">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REG_DATE" id="58E8EEEB-A7CB-4CBF-15A4-125614E1C98E">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POINT" id="8F02D119-ADE9-353D-E448-4DC2611BC06D">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ENABLED" id="A99A94CE-9AEF-BF00-5BC6-ED330B185C52">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UPDATE_DATE" id="B4DAB0D9-655B-9C39-6F36-3CAF6BCE621A">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LEVELS" id="B5099D9D-263D-98A7-9746-29C8E56D5EC0">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USER_PW" id="BAB67463-CD75-B9AF-37C0-D40F81D0AC8E">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TBL_MEMBER_PK" id="8CF33036-6E37-EE22-47FB-08A53B8A5881">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+<schemaObject>ADB3876C-1263-6B1C-46E5-2E4AAC99AF36</schemaObject>
+<segment>4498B5EF-E8C3-AE5A-5AFF-DAFE67994837</segment>
+<tableSpace>BC21371C-4DBA-179D-BABB-C45BD34BA8F8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TBL_MEMBER_PK" id="484B806A-536A-630E-B77F-405F706EE50F">
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+<segment>4498B5EF-E8C3-AE5A-5AFF-DAFE67994837</segment>
+<tableSpace>BC21371C-4DBA-179D-BABB-C45BD34BA8F8</tableSpace>
+<existingIndex>8CF33036-6E37-EE22-47FB-08A53B8A5881</existingIndex>
+<indexSegment>4498B5EF-E8C3-AE5A-5AFF-DAFE67994837</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

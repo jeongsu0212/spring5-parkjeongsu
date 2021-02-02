@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="SEQ_RNO" directorySegmentName="seg_0" id="D5E118E1-A827-35B6-A4D3-89593E554DD7">
+<sourceConnName>XE</sourceConnName>
+<sourceObjSchema>XE</sourceObjSchema>
+<sourceObjName>SEQ_RNO</sourceObjName>
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+<cache>20</cache>
+<incrementBy>1</incrementBy>
+<maxValue>10000</maxValue>
+<minValue>1</minValue>
+<user>E7E5D8F7-B4FC-37C1-7FCE-4B163CC9136D</user>
+</SequenceOraclev10g>

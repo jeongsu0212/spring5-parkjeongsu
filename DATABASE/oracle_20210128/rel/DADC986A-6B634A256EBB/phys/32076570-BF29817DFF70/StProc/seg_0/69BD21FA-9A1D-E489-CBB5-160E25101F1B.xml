@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StoredProcedureOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.StoredProcedureOraclev10g" name="PROC_MEMBER_INSERT" directorySegmentName="seg_0" id="69BD21FA-9A1D-E489-CBB5-160E25101F1B">
+<sourceConnName>XE</sourceConnName>
+<sourceObjSchema>XE</sourceObjSchema>
+<sourceObjName>PROC_MEMBER_INSERT</sourceObjName>
+<createdBy>qw167</createdBy>
+<createdTime>2021-01-28 02:58:50 UTC</createdTime>
+<ownerDesignName>oracle_20210128</ownerDesignName>
+<owner><![CDATA[E7E5D8F7-B4FC-37C1-7FCE-4B163CC9136D]]></owner>
+<source>CREATE OR REPLACE PROCEDURE      XE.PROC_MEMBER_INSERT 
+(
+  P_COUNT IN NUMBER 
+, P_ROLE IN VARCHAR2 
+) AS
+V_USER varchar2(20):=&apos;user&apos;;
+BEGIN
+    if(P_ROLE=&apos;ROLE_ADMIN&apos;) then
+        V_USER:=&apos;admin&apos;;
+    end if;
+  -- DELETE FROM TBL_MEMBER WHERE 1 =1;
+  -- 실행방법: CALL PROC_MEMBER_INSERT(50,&apos;ROLE_ADMIN&apos;);
+  FOR i IN 1..P_COUNT LOOP
+        INSERT INTO TBL_MEMBER
+        (user_id,user_pw,user_name,enabled,levels,reg_date,update_date)
+        VALUES
+        (concat(concat(V_USER,&apos;_&apos;),i),&apos;$2a$10$kIqR/PTloYan/MRNiEsy6uYO6OCHVmAKR4kflVKQkJ345nqTiuGeO&apos;
+        ,&apos;관리자&apos;,1,P_ROLE,SYSDATE,SYSDATE);
+      END LOOP;
+commit;
+END PROC_MEMBER_INSERT;</source>
+</StoredProcedureOraclev10g>
