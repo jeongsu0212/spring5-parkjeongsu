@@ -115,7 +115,7 @@ public class DataSourceTest {
 		boardVO.setWriter("일반사용자");
 		
 		//boardVO.setBno(프라이머리키);
-		for(int cnt=0;cnt<=0;cnt++) {//더미게시물 100입력
+		for(int cnt=0;cnt<=10;cnt++) {//더미게시물 100입력
 			Date reg_date = new Date();
 			Calendar cal = Calendar.getInstance();//+
 			cal.setTime(reg_date);//+

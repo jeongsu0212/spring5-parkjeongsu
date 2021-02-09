@@ -3,6 +3,7 @@ package org.edu.vo;
 import java.util.Date;
 
 import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.stereotype.Component;
 
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MemberVO {
 	//멤버변수 선언(클래스 전역변수)
+	@NotNull(message="사용자ID는 빈값으로 저장할수 없습니다.")
 	private String user_id;//프라이빗: 클래스 내부에서만 사용가능, 보안때문에
 	private String user_pw;
 	private String user_name;

@@ -7,7 +7,7 @@ import org.edu.vo.PageVO;
 
 /**
  * 회원관리 DAO 메서드 명세(목차) 인터페이스.
- * @author 김일국
+ * @author 박정수
  *
  */
 public interface IF_MemberDAO {
@@ -19,4 +19,5 @@ public interface IF_MemberDAO {
 	//회원상세보기에 대한 결과용, jsp 사용할때 memberVO.user_id, memberVO.user_name
 	public MemberVO readMember(String user_id) throws Exception;
 	public void updateMember(MemberVO memberVO) throws Exception;
+	public List<MemberVO> testJob() throws Exception;
 }

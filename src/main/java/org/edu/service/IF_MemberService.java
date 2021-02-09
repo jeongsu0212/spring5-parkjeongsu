@@ -7,7 +7,7 @@ import org.edu.vo.PageVO;
 
 /**
  * IF_MemberService클래스는 DAO를 호출하는 역할입니다.
- * @author 김일국
+ * @author 박정수
  *
  */
 public interface IF_MemberService {
@@ -20,4 +20,6 @@ public interface IF_MemberService {
 	public void insertMember(MemberVO memberVO) throws Exception;
 	//스프링스케줄모듈을 이용해서 실행할 메서드 생성(아래)
 	public void herokuJobMethod() throws Exception;
+	//6개월동안 회원정보 수정이 없는 사용자 목록을 출력하기(아래)
+	public void testJob() throws Exception;
 }
